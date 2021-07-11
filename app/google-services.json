@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "3195930799",
+    "firebase_url": "https://listatarefasapp-3fea4-default-rtdb.firebaseio.com",
+    "project_id": "listatarefasapp-3fea4",
+    "storage_bucket": "listatarefasapp-3fea4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:3195930799:android:449a9529632fd86c7c6c5a",
+        "android_client_info": {
+          "package_name": "ifsp.pdm.listatarefasapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "3195930799-kbr35h3tc56vm9llrn3o44bsnf34pi9i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDB_otYfpuzWPh1XirBgbqn8JjIzTpOq_E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "3195930799-kbr35h3tc56vm9llrn3o44bsnf34pi9i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
