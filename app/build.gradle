@@ -1,8 +1,8 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'com.google.gms.google-services'
 }
-
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
@@ -45,4 +45,8 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    //BoM do Firebase
+    implementation platform('com.google.firebase:firebase-bom:28.2.1')
+    //Biblioteca para o RealTeamDataBAse
+    implementation 'com.google.firebase:firebase-database-ktx:20.0.0'
 }
