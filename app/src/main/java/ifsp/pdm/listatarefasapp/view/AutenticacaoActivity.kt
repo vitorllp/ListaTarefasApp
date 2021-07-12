@@ -2,15 +2,17 @@ package ifsp.pdm.listatarefasapp.view
 
 import android.content.Intent
 import android.os.Bundle
+import android.os.PersistableBundle
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import ifsp.pdm.listatarefasapp.AutenticacaoFirebase
+import ifsp.pdm.listatarefasapp.databinding.ActivityAutenticacaoBinding
 
 class AutenticacaoActivity: AppCompatActivity() {
     private lateinit var activityAutenticacaoBinding: ActivityAutenticacaoBinding
 
-    override fun onCreate(savedInstanceState: Bundle) {
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         activityAutenticacaoBinding = ActivityAutenticacaoBinding.inflate(layoutInflater)
         setContentView(activityAutenticacaoBinding.root)
