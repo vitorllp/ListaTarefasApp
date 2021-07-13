@@ -36,6 +36,9 @@ class MainActivity : AppCompatActivity() {
             Firebase.auth.signOut()
             startActivity(Intent(this, AutenticacaoActivity::class.java))
         }
+        if(item.itemId == R.id.addTarefaTI){
+            startActivity(Intent(this, AdicionarTarefaActivity::class.java))
+        }
         return super.onOptionsItemSelected(item)
     }
 

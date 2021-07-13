@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".view.CadastrarActivity" />
+        <activity android:name=".view.AdicionarTarefaActivity"/>
         <activity android:name=".view.MainActivity" />
         <activity android:name=".view.RecuperarSenhaActivity" />
 
