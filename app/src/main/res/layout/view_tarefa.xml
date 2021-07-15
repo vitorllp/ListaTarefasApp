@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp">
+        <TextView
+            android:id="@+id/tituloTarefaTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Titulo"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/descricaoTarefaTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descrição"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tituloTarefaTV"/>
+        <!--<TextView
+            android:id="@+id/dataPrevistaText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Data prevista para:"
+            android:textSize="15sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/descricaoTarefaTV"/>
+       -->
+        <!--<TextView
+            android:id="@+id/dataPrevistaTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="12/05/2020"
+            android:textSize="16sp"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dataPrevistaText"/>
+        -->
+        <CheckBox
+            android:id="@+id/concluidaCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Concluída"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dataCriacaoTV"/>
+        <TextView
+            android:id="@+id/usuarioTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lucas Ceoni"
+            android:textSize="16sp"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/concluidaCheckBox"/>
+
+        <TextView
+            android:id="@+id/dataCriacaoTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="14/07/2021"
+            android:textSize="16sp"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/usuarioTV"/>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
