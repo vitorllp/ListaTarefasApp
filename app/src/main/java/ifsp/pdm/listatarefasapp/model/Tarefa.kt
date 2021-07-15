@@ -5,10 +5,10 @@ import kotlinx.parcelize.Parcelize
 
 @Parcelize
 data class Tarefa(
-    val titulo: String = "",
-    val descricao: String = "",
-    val usuario: String = "",
-    val dataCriacao: String = "",
-    val dataPrevista: String = "",
-    val cumprido: Boolean = false,
+    var titulo: String = "",
+    var descricao: String = "",
+    var usuario: String = "",
+    var dataCriacao: String = "",
+    var dataPrevista: String = "",
+    var cumprido: Boolean = false,
 ) : Parcelable

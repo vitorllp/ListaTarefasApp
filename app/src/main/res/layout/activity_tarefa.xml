@@ -5,20 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="10dp"
-    tools:context=".view.AdicionarTarefaActivity">
+    tools:context=".view.TarefaActivity">
     <TextView
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:text="Adionando nova tarefa"
+        android:text="Editando tarefa"
         android:textSize="19dp"
-        android:id="@+id/textAdicionarTarefa"
+        android:id="@+id/textEditarTarefa"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:textColor="@color/black"/>
     <EditText
-        android:id="@+id/tituloEt"
+        android:id="@+id/tituloEditarEt"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
@@ -27,10 +27,10 @@
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textAdicionarTarefa" />
+        app:layout_constraintTop_toBottomOf="@+id/textEditarTarefa" />
 
     <EditText
-        android:id="@+id/descricaoEt"
+        android:id="@+id/descricaoEditarEt"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -39,22 +39,21 @@
         android:hint="Descrição"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tituloEt" />
+        app:layout_constraintTop_toBottomOf="@+id/tituloEditarEt" />
 
     <TextView
-        android:id="@+id/dataPrevistaTv"
+        android:id="@+id/dataEditarPrevistaTv"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:labelFor="@id/dataPrevistaET"
         android:text="Data prevista de conclusão"
         android:layout_margin="10dp"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/descricaoEt"/>
+        app:layout_constraintTop_toBottomOf="@+id/descricaoEditarEt"/>
 
     <EditText
-        android:id="@+id/dataPrevistaET"
+        android:id="@+id/dataEditarPrevistaET"
         android:layout_width="0dp"
         android:ems="10"
         android:layout_height="wrap_content"
@@ -63,18 +62,50 @@
         android:layout_margin="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dataPrevistaTv"/>
+        app:layout_constraintTop_toBottomOf="@+id/dataEditarPrevistaTv"/>
+    <CheckBox
+        android:id="@+id/concluidaEditarCheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Concluída"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dataEditarPrevistaET"/>
 
     <Button
-        android:id="@+id/adicionarTarefaBt"
+        android:id="@+id/atualizarTarefaBT"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:text="Adicionar"
+        android:text="CONFIRMAR"
         android:onClick="onClick"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dataPrevistaET" />
+        app:layout_constraintTop_toBottomOf="@+id/concluidaEditarCheckBox" />
+
+    <Button
+        android:id="@+id/deletarTarefaBT"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="DELETAR TAREFA"
+        android:onClick="onClick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/atualizarTarefaBT" />
+
+    <Button
+        android:id="@+id/cancelarTarefaBT"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="CANCELAR"
+        android:onClick="onClick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deletarTarefaBT" />
 
 
 

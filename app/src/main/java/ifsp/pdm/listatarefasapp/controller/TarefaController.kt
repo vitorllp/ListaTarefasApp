@@ -4,12 +4,14 @@ import ifsp.pdm.listatarefasapp.model.Tarefa
 import ifsp.pdm.listatarefasapp.model.TarefaFirebase
 import ifsp.pdm.listatarefasapp.view.MainActivity
 
-class TarefaController(mainActivity: MainActivity) {
-    fun insereOuAtualizaTarefa(tarefa: Tarefa) = TarefaFirebase().criaOuAtualizaTarefa(tarefa)
+class TarefaController(mainActivity: MainActivity?) {
+    private var tarefaFireBase: TarefaFirebase  = TarefaFirebase(null)
 
-    fun buscaTarefa(tarefa:Tarefa) = TarefaFirebase().readTarefa(tarefa.titulo)
+    fun insereOuAtualizaTarefa(tarefa: Tarefa) = tarefaFireBase.criaOuAtualizaTarefa(tarefa)
 
-    fun buscaTarefas(tarefa:Tarefa) = TarefaFirebase().readTarefas()
+    fun buscaTarefa(tarefa:Tarefa) = tarefaFireBase.readTarefa(tarefa.titulo)
 
-    fun removeTarefa(tarefa:Tarefa) = TarefaFirebase().deletaTarefa(tarefa.titulo)
+    fun buscaTarefas() = tarefaFireBase.readTarefas()
+
+    fun removeTarefa(tarefa:Tarefa) = tarefaFireBase.deletaTarefa(tarefa.titulo)
 }

@@ -20,7 +20,7 @@
         <activity android:name=".view.AdicionarTarefaActivity"/>
         <activity android:name=".view.MainActivity" />
         <activity android:name=".view.RecuperarSenhaActivity" />
-
+        <activity android:name=".view.TarefaActivity"/>
     </application>
 
 </manifest>
